@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://0lithnn6h55j"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e2hgw"]
+size = Vector2(1, 1)
+
+[node name="Cube" type="Node3D"]
+
+[node name="F" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.5)
+mesh = SubResource("PlaneMesh_e2hgw")
+
+[node name="B" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, 0, 0, -0.5)
+mesh = SubResource("PlaneMesh_e2hgw")
+
+[node name="L" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.00112342, -0.999997, 0.002221, 0.00301369, -0.00222437, -0.999993, 0.999995, -0.00111673, 0.00301617, -0.498886, -0.00222081, 0.000391354)
+mesh = SubResource("PlaneMesh_e2hgw")
+
+[node name="R" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00112351, 0.999997, 0.00222091, -0.00301369, 0.00222428, -0.999993, -0.999995, 0.00111682, 0.00301617, 0.498886, 0.00222087, -0.000391354)
+mesh = SubResource("PlaneMesh_e2hgw")
+
+[node name="U" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00301369, -0.00222433, -0.999993, 0.00112342, 0.999997, -0.00222095, 0.999995, -0.00111673, 0.00301617, -0.0022208, 0.498886, 0.000391354)
+mesh = SubResource("PlaneMesh_e2hgw")
+
+[node name="D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.00301369, 0.00222424, -0.999993, -0.00112351, -0.999997, -0.00222087, -0.999995, 0.00111682, 0.00301617, 0.0022208, -0.498886, -0.000391354)
+mesh = SubResource("PlaneMesh_e2hgw")

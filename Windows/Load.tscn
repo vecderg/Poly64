@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3 uid="uid://pjvbw5cd3lss"]
+
+[ext_resource type="Script" path="res://Scripts/Load.gd" id="1_3mpru"]
+
+[node name="Load" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 241.0
+offset_bottom = 181.0
+script = ExtResource("1_3mpru")
+
+[node name="SaveButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 88.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 8
+text = "Save File"
+
+[node name="LoadButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 34.0
+offset_right = 88.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 8
+text = "Load File"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 62.0
+offset_right = 60.0
+offset_bottom = 86.0
+theme_override_font_sizes/font_size = 8
+text = "Back
+"
+
+[node name="LoadFile" type="FileDialog" parent="."]
+initial_position = 2
+title = "Open a File"
+size = Vector2i(686, 444)
+borderless = true
+popup_window = true
+ok_button_text = "Open"
+dialog_autowrap = true
+file_mode = 0
+access = 2
+
+[node name="SaveFile" type="FileDialog" parent="."]
+initial_position = 2
+size = Vector2i(686, 444)
+borderless = true
+popup_window = true
+ok_button_text = "Save"
+dialog_autowrap = true
+access = 2
+
+[connection signal="pressed" from="SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="LoadButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="file_selected" from="LoadFile" to="." method="_on_load_file_file_selected"]
+[connection signal="file_selected" from="SaveFile" to="." method="_on_save_file_file_selected"]

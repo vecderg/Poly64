@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgjixk2cvumfb"]
+
+[ext_resource type="ArrayMesh" uid="uid://bvls0jpi5rlrj" path="res://Components/cylindertop.obj" id="1_qtxy3"]
+[ext_resource type="ArrayMesh" uid="uid://xprtrheyx7j4" path="res://Components/cylinderside.obj" id="2_74vya"]
+
+[node name="Cylinder" type="Node3D"]
+
+[node name="CylinderTop" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.96046e-08, 0, 1, 0, 1, 0, -1, 0, 5.96046e-08, 0, 1, 0)
+mesh = ExtResource("1_qtxy3")
+skeleton = NodePath("../..")
+
+[node name="CylinderBottom" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, -6.18172e-08, -0.707107, -8.74228e-08, -1, 0, -0.707107, 6.18172e-08, -0.707107, 0, -1, 0)
+mesh = ExtResource("1_qtxy3")
+skeleton = NodePath("../..")
+
+[node name="Cylinderside1" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, 6.18173e-08, 0.707107, 0, -1, 8.74228e-08, 0.707107, -6.18173e-08, -0.707107, 0, 0, 0)
+mesh = ExtResource("2_74vya")
+skeleton = NodePath("../..")
+
+[node name="Cylinderside2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, -6.18172e-08, 0, -6.18172e-08, -1, 6.18172e-08, 0, -6.18172e-08, -1, 0, 0, 0)
+mesh = ExtResource("2_74vya")
+skeleton = NodePath("../..")
+
+[node name="Cylinderside3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, -6.18173e-08, -0.707107, -8.74228e-08, -1, 0, -0.707107, 6.18173e-08, -0.707107, 0, 0, 0)
+mesh = ExtResource("2_74vya")
+skeleton = NodePath("../..")
+
+[node name="Cylinderside4" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.98023e-08, 6.18172e-08, -1, -6.18172e-08, -1, -6.18172e-08, -1, 6.18172e-08, -2.98023e-08, 0, 0, 0)
+mesh = ExtResource("2_74vya")
+skeleton = NodePath("../..")
+
+[node name="Cylinderside5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.707107, 6.18173e-08, -0.707107, 0, -1, -8.74227e-08, -0.707107, -6.18173e-08, 0.707107, 0, 0, 0)
+mesh = ExtResource("2_74vya")
+skeleton = NodePath("../..")
+
+[node name="Cylinderside6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.999999, -6.18173e-08, 0, 6.18172e-08, -1, -6.18172e-08, 0, -6.18172e-08, 0.999999, 0, 0, 0)
+mesh = ExtResource("2_74vya")
+skeleton = NodePath("../..")
+
+[node name="Cylinderside7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.707107, -6.18173e-08, 0.707107, 8.74227e-08, -1, 0, 0.707107, 6.18173e-08, 0.707107, 0, 0, 0)
+mesh = ExtResource("2_74vya")
+skeleton = NodePath("../..")
+
+[node name="Cylinderside8" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.96046e-08, 7.10543e-15, 1, 8.74227e-08, -1, 0, 1, 8.74228e-08, -5.96046e-08, 0, 0, 0)
+mesh = ExtResource("2_74vya")
+skeleton = NodePath("../..")

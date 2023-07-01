@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://koos8visgjw"]
+
+[ext_resource type="ArrayMesh" uid="uid://d03dra4kuoqbm" path="res://Components/tetrabase.obj" id="1_bcooi"]
+
+[node name="Triangle" type="Node3D"]
+
+[node name="U" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 9.2911e-08, -0.5, 1.50996e-07, -1, 7.57103e-08, -0.5, -1.41065e-07, -0.866025, 0, -1, 0)
+mesh = ExtResource("1_bcooi")

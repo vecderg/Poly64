@@ -1,0 +1,879 @@
+[gd_scene load_steps=38 format=3 uid="uid://dglpm6076ihe5"]
+
+[ext_resource type="Script" path="res://Scripts/BootMenu.gd" id="1_0sp8u"]
+[ext_resource type="Texture2D" uid="uid://ce2imrxrao1vv" path="res://Sprites/poly64 logo.png" id="2_elq2g"]
+[ext_resource type="PackedScene" uid="uid://0lithnn6h55j" path="res://Prefabs/Cube.tscn" id="4_b3sho"]
+[ext_resource type="Texture2D" uid="uid://ctjsr4ltyfb7e" path="res://Sprites/UI/BootMenu/Load.png" id="5_0ls5e"]
+[ext_resource type="Texture2D" uid="uid://bresep3i3jn7h" path="res://Sprites/UI/BootMenu/Texture.png" id="6_fhviv"]
+[ext_resource type="Texture2D" uid="uid://cphgg7bvncpmb" path="res://Sprites/UI/BootMenu/Run.png" id="6_wnq4p"]
+[ext_resource type="Texture2D" uid="uid://dq0uokqpawsfa" path="res://Sprites/UI/BootMenu/Audio.png" id="6_xgqjp"]
+[ext_resource type="Texture2D" uid="uid://2tq5itbiu7te" path="res://Sprites/UI/BootMenu/Save.png" id="7_374vd"]
+[ext_resource type="Texture2D" uid="uid://c4m274yyt7r42" path="res://Sprites/UI/BootMenu/Model.png" id="7_prb1c"]
+[ext_resource type="AudioStream" uid="uid://d1m40ktoerrhu" path="res://Audio/PolyStartup.ogg" id="11_r38p0"]
+[ext_resource type="AudioStream" uid="uid://cns4c7gmbclie" path="res://Audio/PolyTick.ogg" id="12_u708s"]
+[ext_resource type="AudioStream" uid="uid://cv72oqe6lndtn" path="res://Audio/PolySelect.ogg" id="13_slmqx"]
+
+[sub_resource type="Environment" id="Environment_xpmtn"]
+background_mode = 1
+ambient_light_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cq8kf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_jidmi"]
+
+[sub_resource type="Animation" id="Animation_luygy"]
+resource_name = "Intro"
+length = 3.0
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1.87623, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.2, 1.7)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-4.62512, -0.25, 0, 0.25, 0, 0.785398, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.2, 1.7)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:rotation:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-1.29154, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.2, 1.7)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:scale:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.1, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.2, 1.7)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:scale:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.1, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.2, 1.7)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath(".:scale:z")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.1, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.2, 1.7)
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../CanvasLayer/UI/Logo:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.5, 2.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath(".:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../CanvasLayer/UI/BlackFade:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(1.5, 2.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("../CanvasLayer/UI/BlackFade:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
+}
+
+[sub_resource type="Animation" id="Animation_iici3"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.785398, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:scale:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:scale:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:scale:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../CanvasLayer/UI/Logo:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath(".:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../CanvasLayer/UI/BlackFade:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../CanvasLayer/UI/BlackFade:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_hctdj"]
+resource_name = "new_animation"
+length = 2.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rng5n"]
+_data = {
+"Intro": SubResource("Animation_luygy"),
+"RESET": SubResource("Animation_iici3"),
+"new_animation": SubResource("Animation_hctdj")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yinh4"]
+albedo_texture = ExtResource("5_0ls5e")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rcmr8"]
+albedo_texture = ExtResource("6_xgqjp")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mqln4"]
+albedo_texture = ExtResource("7_374vd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fbkkp"]
+albedo_texture = ExtResource("7_prb1c")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wcgk3"]
+albedo_texture = ExtResource("6_wnq4p")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2wm6l"]
+albedo_texture = ExtResource("6_fhviv")
+
+[sub_resource type="Gradient" id="Gradient_rfb6t"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_80wku"]
+gradient = SubResource("Gradient_rfb6t")
+
+[sub_resource type="Gradient" id="Gradient_g0512"]
+offsets = PackedFloat32Array(0.674009, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_8lkbr"]
+gradient = SubResource("Gradient_g0512")
+
+[sub_resource type="Animation" id="Animation_eli4t"]
+resource_name = "Audio"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OptionCube")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OptionCube:rotation:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionCube:rotation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-3.14159, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionCube:rotation:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_oa8nx"]
+resource_name = "Code"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OptionCube")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OptionCube:rotation:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionCube:rotation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.5708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionCube:rotation:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_2jgyt"]
+resource_name = "Load"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OptionCube")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OptionCube:rotation:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionCube:rotation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionCube:rotation:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_qpch4"]
+resource_name = "Model"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OptionCube")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OptionCube:rotation:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.0174533, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionCube:rotation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-1.5708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionCube:rotation:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_0l3jy"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OptionCube:rotation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OptionCube:rotation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-1.5708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionCube:rotation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_g6rgi"]
+resource_name = "Run"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OptionCube")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OptionCube:rotation:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.5708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionCube:rotation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionCube:rotation:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_hs6oy"]
+resource_name = "Texture"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OptionCube")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OptionCube:rotation:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.5708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionCube:rotation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionCube:rotation:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(3.14159, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i4g8g"]
+_data = {
+"Audio": SubResource("Animation_eli4t"),
+"Code": SubResource("Animation_oa8nx"),
+"Load": SubResource("Animation_2jgyt"),
+"Model": SubResource("Animation_qpch4"),
+"RESET": SubResource("Animation_0l3jy"),
+"Run": SubResource("Animation_g6rgi"),
+"Texture": SubResource("Animation_hs6oy")
+}
+
+[node name="Menu" type="Node3D"]
+script = ExtResource("1_0sp8u")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.8592)
+environment = SubResource("Environment_xpmtn")
+current = true
+near = 1.511
+
+[node name="Cube" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.41421, 0, 1.41421, 0, 2, 0, -1.41421, 0, 1.41421, -0.0284166, 3.09756, 0.0540104)
+visible = false
+material_override = SubResource("StandardMaterial3D_cq8kf")
+mesh = SubResource("BoxMesh_jidmi")
+
+[node name="IntroPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Cube")
+libraries = {
+"": SubResource("AnimationLibrary_rng5n")
+}
+
+[node name="Light" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, 0.5, 0.5, -0.707107, 0.5, 0.5, 0, -0.707107, 0.707107, 0.745193, 7.50798, -1.87332)
+light_energy = 2.0
+directional_shadow_mode = 0
+sky_mode = 1
+
+[node name="Underlight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.458211, 0.631943, -0.625053, -0.58957, -0.310171, -0.745789, -0.665169, 0.710241, 0.23045, 0.745193, -7.51357, -1.87332)
+light_energy = 0.2
+
+[node name="OptionCube" parent="." instance=ExtResource("4_b3sho")]
+transform = Transform3D(-8.12362e-06, 0, -2.2441, 0, 2.2441, 0, 2.2441, 0, -8.12362e-06, 2.81341, -1.9021, 0)
+
+[node name="F" parent="OptionCube" index="0"]
+material_override = SubResource("StandardMaterial3D_yinh4")
+
+[node name="B" parent="OptionCube" index="1"]
+material_override = SubResource("StandardMaterial3D_rcmr8")
+
+[node name="L" parent="OptionCube" index="2"]
+material_override = SubResource("StandardMaterial3D_mqln4")
+
+[node name="R" parent="OptionCube" index="3"]
+material_override = SubResource("StandardMaterial3D_fbkkp")
+
+[node name="U" parent="OptionCube" index="4"]
+transform = Transform3D(0.999995, -0.00111673, 0.00301621, 0.00112342, 0.999997, -0.00222095, -0.00301373, 0.00222433, 0.999993, -0.00222075, 0.498886, 0.000391354)
+material_override = SubResource("StandardMaterial3D_wcgk3")
+
+[node name="D" parent="OptionCube" index="5"]
+material_override = SubResource("StandardMaterial3D_2wm6l")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 320.0
+offset_bottom = 240.0
+mouse_filter = 2
+
+[node name="Cover" type="TextureRect" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = -43.0
+offset_top = 163.0
+offset_right = 287.0
+offset_bottom = 227.0
+texture = SubResource("GradientTexture1D_80wku")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = 40.0001
+offset_top = 84.0
+offset_right = 113.0
+offset_bottom = 154.0
+scroll_vertical = 48
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UI/ScrollContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="None0" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="None1" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="None2" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Run" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Run"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Load" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "System"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Code" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Code
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Model" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Model	"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Texture" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Texture
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Audio" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Audio"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="None3" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="None4" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="None5" type="Label" parent="CanvasLayer/UI/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Gradient" type="TextureRect" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = 20.0002
+offset_top = 177.0
+offset_right = 276.0
+offset_bottom = 217.0
+rotation = -1.57079
+scale = Vector2(0.200001, 3)
+texture = SubResource("GradientTexture1D_8lkbr")
+
+[node name="Gradient2" type="TextureRect" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = 20.0002
+offset_top = 77.0
+offset_right = 276.0
+offset_bottom = 117.0
+rotation = -1.57079
+scale = Vector2(-0.119998, 3)
+texture = SubResource("GradientTexture1D_8lkbr")
+
+[node name="Arrow" type="Polygon2D" parent="CanvasLayer/UI"]
+position = Vector2(24, 124)
+rotation = -1.57079
+scale = Vector2(1.93564, 1.93564)
+antialiased = true
+polygon = PackedVector2Array(0, 0, 9.36673, -2.09808e-05, 4.68337, 4.68336)
+
+[node name="ScrollUp" type="Polygon2D" parent="CanvasLayer/UI"]
+position = Vector2(118, 95)
+rotation = -3.14159
+scale = Vector2(1.93564, 1.93564)
+antialiased = true
+polygon = PackedVector2Array(1.54988, 0, 7.74938, -4.19617e-05, 4.68337, 4.68336)
+
+[node name="ScrollDown" type="Polygon2D" parent="CanvasLayer/UI"]
+position = Vector2(100, 149)
+scale = Vector2(1.93564, 1.93564)
+antialiased = true
+polygon = PackedVector2Array(1.54988, 0, 7.74938, -4.19617e-05, 4.68337, 4.68336)
+
+[node name="BlackFade" type="TextureRect" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = -43.0
+offset_top = 67.0
+offset_right = 285.0
+offset_bottom = 227.0
+texture = SubResource("GradientTexture1D_80wku")
+
+[node name="Logo" type="TextureRect" parent="CanvasLayer/UI"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.0
+offset_top = -194.0
+offset_right = 123.0
+offset_bottom = 46.0003
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.263966, 0.263966)
+pivot_offset = Vector2(155.114, 118.616)
+texture = ExtResource("2_elq2g")
+stretch_mode = 5
+
+[node name="ButtonSelect" type="Button" parent="CanvasLayer/UI"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 38.0
+offset_top = 107.0
+offset_right = 96.0
+offset_bottom = 120.0
+
+[node name="ButtonUp" type="Button" parent="CanvasLayer/UI"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 101.0
+offset_top = 82.0
+offset_right = 117.0
+offset_bottom = 97.0
+
+[node name="ButtonDown" type="Button" parent="CanvasLayer/UI"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 101.0
+offset_top = 145.0
+offset_right = 118.0
+offset_bottom = 161.0
+
+[node name="OptionPlayer" type="AnimationPlayer" parent="."]
+playback_default_blend_time = 0.2
+libraries = {
+"": SubResource("AnimationLibrary_i4g8g")
+}
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="SoundStartup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_r38p0")
+
+[node name="SoundTick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_u708s")
+
+[node name="SoundSelect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_slmqx")
+
+[connection signal="pressed" from="CanvasLayer/UI/ButtonSelect" to="." method="_pressMenuButton" binds= ["1"]]
+[connection signal="pressed" from="CanvasLayer/UI/ButtonUp" to="." method="_pressMenuButton" binds= ["Up"]]
+[connection signal="pressed" from="CanvasLayer/UI/ButtonDown" to="." method="_pressMenuButton" binds= ["Down"]]
+
+[editable path="OptionCube"]

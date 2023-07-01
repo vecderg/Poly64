@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5mnh6rgqe2n2"]
+
+[ext_resource type="Script" path="res://Scripts/PixelButton.gd" id="1_0q66y"]
+
+[node name="PixelButton" type="Button"]
+modulate = Color(1, 1, 1, 0)
+action_mode = 0
+script = ExtResource("1_0q66y")
+
+[connection signal="button_down" from="." to="." method="_on_pressed"]

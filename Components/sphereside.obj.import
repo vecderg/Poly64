@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d1xceuol6g8w6"
+path="res://.godot/imported/sphereside.obj-127d35f45b87c1841575b3a99dd13ab1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/sphereside.obj-127d35f45b87c1841575b3a99dd13ab1.mesh"]
+
+source_file="res://Components/sphereside.obj"
+dest_files=["res://.godot/imported/sphereside.obj-127d35f45b87c1841575b3a99dd13ab1.mesh", "res://.godot/imported/sphereside.obj-127d35f45b87c1841575b3a99dd13ab1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

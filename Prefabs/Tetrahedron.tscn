@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://btyeurx6wxw5f"]
+
+[ext_resource type="ArrayMesh" uid="uid://d03dra4kuoqbm" path="res://Components/tetrabase.obj" id="1_pa83d"]
+[ext_resource type="ArrayMesh" uid="uid://csuy01u4f0jr1" path="res://Components/tetraside.obj" id="2_wr66x"]
+
+[node name="Tetrahedron" type="Node3D"]
+
+[node name="Tetrabase" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 0, 0, 0)
+mesh = ExtResource("1_pa83d")
+
+[node name="Tetraside" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+mesh = ExtResource("2_wr66x")
+
+[node name="Tetraside2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 0, 0, 0)
+mesh = ExtResource("2_wr66x")
+
+[node name="Tetraside3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 0, 0, 0)
+mesh = ExtResource("2_wr66x")

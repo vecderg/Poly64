@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://wv8fbidap6g8"]
+
+[ext_resource type="Script" path="res://Scripts/Coding.gd" id="1_w8t8m"]
+[ext_resource type="FontFile" uid="uid://bqhf8l868n0e3" path="res://Fonts/acorn-mode-1.ttf" id="2_itshw"]
+
+[node name="Code" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_w8t8m")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 242.0
+offset_bottom = 180.0
+
+[node name="BackButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 152.0
+offset_right = 43.0
+offset_bottom = 174.0
+theme_override_font_sizes/font_size = 8
+text = "Back"
+
+[node name="TextEdit" type="TextEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 237.0
+offset_bottom = 147.0
+theme_override_fonts/font = ExtResource("2_itshw")
+theme_override_font_sizes/font_size = 8
+text = "test"
+highlight_all_occurrences = true
+highlight_current_line = true
+draw_tabs = true
+scroll_smooth = true
+
+[node name="LineCount" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 153.0
+offset_right = 236.0
+offset_bottom = 176.0
+theme_override_font_sizes/font_size = 8
+text = "L:0
+C:0"
+horizontal_alignment = 2
+
+[connection signal="pressed" from="Panel/BackButton" to="." method="_on_back_button_pressed"]

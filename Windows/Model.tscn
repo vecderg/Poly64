@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://u88w0630hx00"]
+
+[ext_resource type="Script" path="res://Scripts/Model.gd" id="1_bdtxm"]
+
+[sub_resource type="Gradient" id="Gradient_b8m5r"]
+offsets = PackedFloat32Array(0, 0.0142857, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.0253638, 0.0253638, 0.0253638, 1, 0.493545, 0.493546, 0.493546, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_r3l20"]
+gradient = SubResource("Gradient_b8m5r")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2vmm2"]
+albedo_texture = SubResource("GradientTexture1D_r3l20")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s8a2s"]
+
+[sub_resource type="Environment" id="Environment_bt2ct"]
+background_mode = 1
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="Model" type="Node3D"]
+visible = false
+script = ExtResource("1_bdtxm")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-2.97237e-07, -1.8677e-07, -6.8, 6.8, -5.21253e-16, -2.97237e-07, 5.19706e-14, -1, 1.27004e-06, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_2vmm2")
+mesh = SubResource("PlaneMesh_s8a2s")
+
+[node name="Light" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, 0.5, 0.5, -0.707107, 0.5, 0.5, 0, -0.707107, 0.707107, 0.745193, 7.50798, -1.87332)
+light_energy = 2.0
+directional_shadow_mode = 0
+sky_mode = 1
+
+[node name="Underlight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.458211, 0.631943, -0.625053, -0.58957, -0.310171, -0.745789, -0.665169, 0.710241, 0.23045, 0.745193, -7.51357, -1.87332)
+light_energy = 0.2
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.8592)
+environment = SubResource("Environment_bt2ct")
+near = 1.511

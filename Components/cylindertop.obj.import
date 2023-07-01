@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvls0jpi5rlrj"
+path="res://.godot/imported/cylindertop.obj-045e9e4fd44880f101fe70203a8afde8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cylindertop.obj-045e9e4fd44880f101fe70203a8afde8.mesh"]
+
+source_file="res://Components/cylindertop.obj"
+dest_files=["res://.godot/imported/cylindertop.obj-045e9e4fd44880f101fe70203a8afde8.mesh", "res://.godot/imported/cylindertop.obj-045e9e4fd44880f101fe70203a8afde8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

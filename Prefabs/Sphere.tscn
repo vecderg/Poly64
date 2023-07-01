@@ -1,0 +1,102 @@
+[gd_scene load_steps=3 format=3 uid="uid://cns5pf3hfjjgo"]
+
+[ext_resource type="ArrayMesh" uid="uid://bxw3owoqn0xlu" path="res://Components/spherecap.obj" id="1_2ncsr"]
+[ext_resource type="ArrayMesh" uid="uid://d1xceuol6g8w6" path="res://Components/sphereside.obj" id="2_mhxwv"]
+
+[node name="Sphere" type="Node3D"]
+
+[node name="Spherecap" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 0, -0.866026, 0, 1, 0, 0.866026, 0, -0.5, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 1.49012e-07, 0, 1, 0, -1.49012e-07, 0, 1, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap7" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0.866025, 0, -1, 0, -0.866025, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 0, 0.866025, 0, -1, 0, -0.866025, 0, -0.5, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 2.98023e-08, 0, -1, 0, -2.98023e-08, 0, -1, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 0, -0.866026, 0, -1, 0, 0.866026, 0, -0.5, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap11" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, -0.866025, 0, -1, 0, 0.866025, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Spherecap12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("1_2ncsr")
+
+[node name="Sphereside" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 0, -0.866026, 0, 1, 0, 0.866026, 0, -0.5, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 1.49012e-07, 0, 1, 0, -1.49012e-07, 0, 1, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside7" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0.866026, 0, -1, 0, -0.866026, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 0, 0.866025, 0, -1, 0, -0.866025, 0, -0.5, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -1.7683e-07, 0, -1, 0, 1.7683e-07, 0, -1, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.5, 0, -0.866026, 0, -1, 0, 0.866026, 0, -0.5, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside11" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, -0.866025, 0, -1, 0, 0.866025, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")
+
+[node name="Sphereside12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 2.36434e-07, 0, -1, 0, -2.36434e-07, 0, 1, 0, 0, 0)
+mesh = ExtResource("2_mhxwv")

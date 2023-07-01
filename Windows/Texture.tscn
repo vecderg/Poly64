@@ -1,0 +1,334 @@
+[gd_scene load_steps=8 format=3 uid="uid://d3l5vusr3xgiu"]
+
+[ext_resource type="Script" path="res://Scripts/Textures.gd" id="1_iy8j3"]
+[ext_resource type="PackedScene" uid="uid://xmidni1mtt7r" path="res://Prefabs/PalettePixelButton.tscn" id="2_sj8j5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlxgs"]
+bg_color = Color(0.211765, 0.211765, 0.211765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_omehj"]
+bg_color = Color(0.117647, 0.117647, 0.117647, 0.419608)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1s6i"]
+size = Vector2(12, 12)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rqiiy"]
+bg_color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cercp"]
+bg_color = Color(0.14902, 0.14902, 0.231373, 0.894118)
+
+[node name="Texture" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_iy8j3")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 242.0
+offset_bottom = 180.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nlxgs")
+
+[node name="BackButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 152.0
+offset_right = 43.0
+offset_bottom = 174.0
+theme_override_font_sizes/font_size = 8
+text = "Back"
+
+[node name="ScaleSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 66.0
+offset_right = 172.0
+offset_bottom = 82.0
+rotation = 1.57079
+scale = Vector2(0.500427, 0.500427)
+min_value = 0.2
+max_value = 5.0
+step = 0.1
+value = 1.0
+tick_count = 7
+ticks_on_borders = true
+
+[node name="BrushSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 159.0
+offset_right = 236.0
+offset_bottom = 175.0
+scale = Vector2(0.500427, 0.500427)
+min_value = 1.0
+max_value = 5.0
+value = 1.0
+tick_count = 5
+ticks_on_borders = true
+
+[node name="YSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 26.0068
+offset_top = 16.0
+offset_right = 283.007
+offset_bottom = 32.0
+rotation = 1.57079
+scale = Vector2(0.500427, 0.500427)
+min_value = -500.0
+max_value = 500.0
+step = 0.1
+value = 1.0
+
+[node name="XSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_left = 28.0068
+offset_top = 6.0
+offset_right = 284.007
+offset_bottom = 22.0
+scale = Vector2(0.500427, 0.500427)
+min_value = -500.0
+max_value = 500.0
+step = 0.1
+value = 1.0
+
+[node name="ResetPos" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 20.0
+offset_right = 35.0
+offset_bottom = 20.0
+rotation = 1.57079
+theme_override_font_sizes/font_size = 8
+text = "↺"
+
+[node name="DrawPanel" type="Panel" parent="Panel"]
+clip_contents = true
+layout_mode = 0
+offset_left = 29.0068
+offset_top = 16.0
+offset_right = 158.007
+offset_bottom = 145.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_omehj")
+
+[node name="DrawCanvas" type="GridContainer" parent="Panel/DrawPanel"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 128.0
+offset_bottom = 128.0
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 2
+columns = 8
+
+[node name="TextureScroll" type="ScrollContainer" parent="Panel"]
+clip_contents = false
+custom_minimum_size = Vector2(65, 58)
+layout_mode = 0
+offset_left = 173.0
+offset_top = 1.0
+offset_right = 238.0
+offset_bottom = 179.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="TextureContainer" type="VBoxContainer" parent="Panel/TextureScroll"]
+layout_mode = 2
+
+[node name="NewTexture" type="Button" parent="Panel/TextureScroll/TextureContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "+"
+
+[node name="CurrentColorBG" type="ColorRect" parent="Panel"]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 155.0
+offset_right = 101.0
+offset_bottom = 197.0
+scale = Vector2(0.378146, 0.378146)
+color = Color(0.113725, 0.113725, 0.113725, 1)
+
+[node name="CurrentColor" type="ColorRect" parent="Panel"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 157.0
+offset_right = 73.0
+offset_bottom = 169.0
+
+[node name="PaletteButton" type="TouchScreenButton" parent="Panel/CurrentColor"]
+position = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_s1s6i")
+
+[node name="CreateTextureDialog" type="Panel" parent="Panel"]
+visible = false
+layout_mode = 0
+offset_left = 43.0
+offset_top = 26.0
+offset_right = 146.0
+offset_bottom = 127.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rqiiy")
+
+[node name="Label" type="Label" parent="Panel/CreateTextureDialog"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 5.0
+offset_right = 95.0
+offset_bottom = 16.0
+theme_override_font_sizes/font_size = 8
+text = "NEW TEXTURE"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CreateTextureDialog"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 17.0
+offset_right = 93.0
+offset_bottom = 49.0
+
+[node name="4" type="Button" parent="Panel/CreateTextureDialog/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "4x4"
+
+[node name="8" type="Button" parent="Panel/CreateTextureDialog/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "8x8"
+
+[node name="16" type="Button" parent="Panel/CreateTextureDialog/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "16x16"
+
+[node name="32" type="Button" parent="Panel/CreateTextureDialog/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "32x32"
+
+[node name="64" type="Button" parent="Panel/CreateTextureDialog/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "64x64"
+
+[node name="ColorPaletteBG" type="Panel" parent="Panel"]
+visible = false
+layout_mode = 0
+offset_left = 61.0
+offset_top = 80.0
+offset_right = 136.0
+offset_bottom = 155.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cercp")
+
+[node name="ColorPalette" type="GridContainer" parent="Panel/ColorPaletteBG"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 73.0
+offset_bottom = 74.0
+theme_override_constants/h_separation = 1
+theme_override_constants/v_separation = 1
+columns = 8
+
+[node name="0" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+color = Color(1, 1, 1, 0)
+
+[node name="TranspGrid" type="GridContainer" parent="Panel/ColorPaletteBG/ColorPalette/0"]
+modulate = Color(1, 1, 1, 0.654902)
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+scale = Vector2(0.248985, 0.248985)
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 4
+
+[node name="64" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[node name="65" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+
+[node name="66" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[node name="71" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+
+[node name="67" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+
+[node name="68" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[node name="69" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+
+[node name="70" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[node name="72" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[node name="77" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+
+[node name="74" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[node name="73" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+
+[node name="75" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+
+[node name="76" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[node name="79" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+
+[node name="78" type="ColorRect" parent="Panel/ColorPaletteBG/ColorPalette/0/TranspGrid"]
+custom_minimum_size = Vector2(8, 8)
+layout_mode = 2
+color = Color(0.627451, 0.627451, 0.627451, 1)
+
+[node name="PalettePixelButton" parent="Panel/ColorPaletteBG/ColorPalette/0" instance=ExtResource("2_sj8j5")]
+position = Vector2(4, 4)
+
+[connection signal="pressed" from="Panel/BackButton" to="." method="_on_back_button_pressed" flags=18]
+[connection signal="drag_ended" from="Panel/BrushSlider" to="." method="_on_brush_slider_drag_ended"]
+[connection signal="pressed" from="Panel/ResetPos" to="." method="_on_reset_pos_pressed"]
+[connection signal="pressed" from="Panel/TextureScroll/TextureContainer/NewTexture" to="." method="_on_new_texture_pressed"]
+[connection signal="pressed" from="Panel/CurrentColor/PaletteButton" to="." method="_on_palette_button_pressed"]
+[connection signal="pressed" from="Panel/CreateTextureDialog/VBoxContainer/4" to="." method="_on_CreateTexture_pressed" binds= [4]]
+[connection signal="pressed" from="Panel/CreateTextureDialog/VBoxContainer/8" to="." method="_on_CreateTexture_pressed" binds= [8]]
+[connection signal="pressed" from="Panel/CreateTextureDialog/VBoxContainer/16" to="." method="_on_CreateTexture_pressed" binds= [16]]
+[connection signal="pressed" from="Panel/CreateTextureDialog/VBoxContainer/32" to="." method="_on_CreateTexture_pressed" binds= [32]]
+[connection signal="pressed" from="Panel/CreateTextureDialog/VBoxContainer/64" to="." method="_on_CreateTexture_pressed" binds= [64]]

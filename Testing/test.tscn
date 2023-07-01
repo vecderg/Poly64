@@ -1,0 +1,1956 @@
+[gd_scene load_steps=151 format=3 uid="uid://cn8wa6ddcrrgn"]
+
+[ext_resource type="PackedScene" uid="uid://0lithnn6h55j" path="res://Prefabs/Cube.tscn" id="1_34214"]
+[ext_resource type="Texture2D" uid="uid://bcbl85xqjg81" path="res://Testing/Sprite/roboidle0000.png" id="1_k7ais"]
+[ext_resource type="PackedScene" uid="uid://b8lbrrdav8to0" path="res://Prefabs/Plane.tscn" id="2_w23ue"]
+[ext_resource type="Texture2D" uid="uid://cu3d3v6dyvum7" path="res://Testing/Sprite/gravel.png" id="3_60kxx"]
+[ext_resource type="Texture2D" uid="uid://dlqtpqp1ru7ei" path="res://Testing/Sprite/window.png" id="4_3scxb"]
+[ext_resource type="Texture2D" uid="uid://7jpdafcycfui" path="res://Testing/Sprite/road.png" id="6_avkr2"]
+[ext_resource type="PackedScene" uid="uid://cns5pf3hfjjgo" path="res://Prefabs/Sphere.tscn" id="7_u8h7x"]
+[ext_resource type="Texture2D" uid="uid://d3ay2xufm8rce" path="res://Testing/Sprite/black.png" id="8_3geja"]
+[ext_resource type="PackedScene" uid="uid://bgjixk2cvumfb" path="res://Prefabs/Cylinder.tscn" id="8_lqyso"]
+[ext_resource type="Texture2D" uid="uid://n5pty17iq3jx" path="res://Testing/Sprite/eye.png" id="9_bv1rh"]
+[ext_resource type="PackedScene" uid="uid://btyeurx6wxw5f" path="res://Prefabs/Tetrahedron.tscn" id="9_quidg"]
+[ext_resource type="Texture2D" uid="uid://dca87m0qv3lo1" path="res://Testing/Sprite/blue.png" id="11_pit82"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_43ot5"]
+radial_segments = 6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jk85t"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_k7ais")
+
+[sub_resource type="BoxMesh" id="BoxMesh_1av3l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cjasi"]
+albedo_texture = ExtResource("3_60kxx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egoyj"]
+albedo_texture = ExtResource("6_avkr2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_36rnw"]
+albedo_texture = ExtResource("6_avkr2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_740v3"]
+albedo_texture = ExtResource("6_avkr2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iwntv"]
+albedo_texture = ExtResource("6_avkr2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mgy0k"]
+albedo_texture = ExtResource("6_avkr2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ydjq"]
+albedo_texture = ExtResource("6_avkr2")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ttwh"]
+
+[sub_resource type="Environment" id="Environment_5buqi"]
+background_mode = 1
+ambient_light_color = Color(1, 1, 1, 1)
+fog_light_energy = 2.71
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcw5a"]
+albedo_texture = ExtResource("4_3scxb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_htt44"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lxmrt"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0dqbb"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7kyp4"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c636n"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7qmno"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ybii6"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbxn6"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xkkr5"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j0k0r"]
+albedo_texture = ExtResource("9_bv1rh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iv7s3"]
+albedo_texture = ExtResource("9_bv1rh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a5swq"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1n4cf"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yqs1t"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8r8if"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ok77"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0m2gm"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3jjqn"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7tybo"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_llwud"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pmf1j"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q37fi"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6h4tp"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fp27f"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ulp6b"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3b8o"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_evqcn"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wgtek"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4yovo"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_msatq"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fi6g6"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1vux"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qv7ha"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_agf5p"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwnuj"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwef3"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o8pph"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0rcd"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j0bgj"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0yple"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wsjji"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vayyq"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rsqo"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qxqau"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v33ay"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n44h8"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_md8lo"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rfhn5"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hyqh"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1syng"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vfdr2"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rc6xe"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4nr42"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xiwaj"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ddixa"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y55ik"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n7ytw"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0v72o"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uosn3"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tg0d3"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_na2kh"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_15snk"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efyvc"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xx6vp"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_unyta"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4gc6t"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qrofp"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_71c7q"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r35ch"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2jv0g"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qmlft"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_st2e4"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jlbtd"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hbcn"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j0wcc"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_phwx6"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4qs37"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8f16a"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_os62y"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ftd18"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nqo5e"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ohum"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ycqio"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ajs01"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wjvsi"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rc4uw"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_24yul"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jnkf3"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_axriw"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l30wo"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ilwc"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_747tu"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ceqq6"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1at8y"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r78ja"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_03ct1"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3udn"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5mtgv"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5xcg"]
+albedo_texture = ExtResource("11_pit82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ymskw"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_is3fg"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5pdu7"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nh4us"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d0kij"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o8x85"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0s2c"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3s5e2"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w83xq"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1yroc"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_34k48"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jsb11"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x3pa3"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s4d78"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oelvr"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7i8e"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pnei6"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3vk1v"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_011pq"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_smigd"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odph6"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cifov"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_04hl1"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l5qlm"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lx3if"]
+albedo_texture = ExtResource("8_3geja")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bs7rl"]
+albedo_texture = ExtResource("8_3geja")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Torso" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Torso"]
+transform = Transform3D(1, 0, 0, 0, 0.426731, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_43ot5")
+skeleton = NodePath("")
+
+[node name="Node3D" type="Node3D" parent="Torso/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10822, 0)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Torso/MeshInstance3D/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 0.668578, 0, 0, 0, 1, 0, 0.835696, 0)
+mesh = SubResource("CylinderMesh_43ot5")
+skeleton = NodePath("../../../..")
+
+[node name="BiosCube" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, -3.82137e-15, -8.74228e-08, -8.74228e-08, 4.37114e-08, 1, 0, 1, -4.37114e-08, 7.17917, 0, 0)
+visible = false
+material_override = SubResource("StandardMaterial3D_jk85t")
+mesh = SubResource("BoxMesh_1av3l")
+
+[node name="TestScene" type="Node3D" parent="."]
+
+[node name="Plane" parent="TestScene" instance=ExtResource("2_w23ue")]
+transform = Transform3D(1.86532, 0, 0, 0, 1, 0, 0, 0, 12.4507, 0, 0.127, -13.16)
+
+[node name="U" parent="TestScene/Plane" index="0"]
+material_override = SubResource("StandardMaterial3D_cjasi")
+
+[node name="Plane2" parent="TestScene" instance=ExtResource("2_w23ue")]
+transform = Transform3D(1.86532, 0, 0, 0, 1, 0, 0, 0, 12.4507, 0, 0.135, -0.902)
+
+[node name="U" parent="TestScene/Plane2" index="0"]
+material_override = SubResource("StandardMaterial3D_cjasi")
+
+[node name="Cube" parent="TestScene" instance=ExtResource("1_34214")]
+transform = Transform3D(10.1519, 0, 0, 0, 0.254273, 0, 0, 0, 24.7409, 0, 0, -7.00176)
+
+[node name="F" parent="TestScene/Cube" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Cube" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Cube" index="2"]
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Cube" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Cube" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Cube" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Cube"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Cube/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Camera3D" type="Camera3D" parent="TestScene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.79057, 5.66863)
+environment = SubResource("Environment_5buqi")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="TestScene"]
+transform = Transform3D(0.832196, 0.155188, -0.532322, 0.554481, -0.232915, 0.798938, 0, -0.960035, -0.279879, 0, 5.54755, 0)
+light_energy = 1.119
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="TestScene"]
+transform = Transform3D(0.666051, -0.208764, 0.716096, 0.742208, 0.280973, -0.608425, -0.0741868, 0.936735, 0.342089, 0, 5.54755, 3.98567)
+
+[node name="Building" type="Node3D" parent="TestScene"]
+
+[node name="Plane3" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.30751, -1.84251)
+
+[node name="U" parent="TestScene/Building/Plane3" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane4" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.19877, -1.17059)
+
+[node name="U" parent="TestScene/Building/Plane4" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane11" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.96968, -1.84251)
+
+[node name="U" parent="TestScene/Building/Plane11" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane12" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.86093, -1.17059)
+
+[node name="U" parent="TestScene/Building/Plane12" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane5" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 1.81434, 2.39364, -1.91414)
+
+[node name="U" parent="TestScene/Building/Plane5" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane6" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 2.22973, 2.49592, -1.25052)
+
+[node name="U" parent="TestScene/Building/Plane6" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane7" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.88333, 1.54246, -1.7675)
+
+[node name="U" parent="TestScene/Building/Plane7" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane8" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.30605, 1.64791, -1.10902)
+
+[node name="U" parent="TestScene/Building/Plane8" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane9" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.94436, 0.791422, -1.68176)
+
+[node name="U" parent="TestScene/Building/Plane9" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane10" parent="TestScene/Building" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.36707, 0.896869, -1.02329)
+
+[node name="U" parent="TestScene/Building/Plane10" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Cube2" parent="TestScene/Building" instance=ExtResource("1_34214")]
+transform = Transform3D(1.43986, -0.28495, 0.978067, 0, 3.17256, 0.31404, -0.897314, -0.45724, 1.56944, 2.87111, 1.3413, -1.88848)
+
+[node name="F" parent="TestScene/Building/Cube2" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building/Cube2" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building/Cube2" index="2"]
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building/Cube2" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building/Cube2" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building/Cube2" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building/Cube2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building/Cube2/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Cube3" parent="TestScene/Building" instance=ExtResource("1_34214")]
+transform = Transform3D(1.29783, 0.0115935, 0.894188, 0, 2.90048, -0.012777, -0.808804, 0.0186033, 1.43484, 2.81548, 2.99843, -1.93984)
+
+[node name="F" parent="TestScene/Building/Cube3" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building/Cube3" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building/Cube3" index="2"]
+transform = Transform3D(-0.00112342, -0.999997, 0.002221, 0.00301369, -0.00222437, -0.999993, 0.999995, -0.00111673, 0.00301617, -0.498886, -0.00222081, 0.000391245)
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building/Cube3" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building/Cube3" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building/Cube3" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building/Cube3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building/Cube3/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Building2" type="Node3D" parent="TestScene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.849849, 4.76837e-07, 2.73871)
+
+[node name="Plane3" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.30751, -1.84251)
+
+[node name="U" parent="TestScene/Building2/Plane3" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane4" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.19877, -1.17059)
+
+[node name="U" parent="TestScene/Building2/Plane4" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane11" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.96968, -1.84251)
+
+[node name="U" parent="TestScene/Building2/Plane11" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane12" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.86093, -1.17059)
+
+[node name="U" parent="TestScene/Building2/Plane12" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane5" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 1.81434, 2.39364, -1.91414)
+
+[node name="U" parent="TestScene/Building2/Plane5" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane6" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 2.22973, 2.49592, -1.25052)
+
+[node name="U" parent="TestScene/Building2/Plane6" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane7" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.88333, 1.54246, -1.7675)
+
+[node name="U" parent="TestScene/Building2/Plane7" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane8" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.30605, 1.64791, -1.10902)
+
+[node name="U" parent="TestScene/Building2/Plane8" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane9" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.94436, 0.791422, -1.68176)
+
+[node name="U" parent="TestScene/Building2/Plane9" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane10" parent="TestScene/Building2" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.36707, 0.896869, -1.02329)
+
+[node name="U" parent="TestScene/Building2/Plane10" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Cube2" parent="TestScene/Building2" instance=ExtResource("1_34214")]
+transform = Transform3D(1.43986, -0.28495, 0.978067, 0, 3.17256, 0.31404, -0.897314, -0.45724, 1.56944, 2.87111, 1.3413, -1.88848)
+
+[node name="F" parent="TestScene/Building2/Cube2" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building2/Cube2" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building2/Cube2" index="2"]
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building2/Cube2" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building2/Cube2" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building2/Cube2" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building2/Cube2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building2/Cube2/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Cube3" parent="TestScene/Building2" instance=ExtResource("1_34214")]
+transform = Transform3D(1.29783, 0.0115935, 0.894188, 0, 2.90048, -0.012777, -0.808804, 0.0186033, 1.43484, 2.81548, 2.99843, -1.93984)
+
+[node name="F" parent="TestScene/Building2/Cube3" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building2/Cube3" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building2/Cube3" index="2"]
+transform = Transform3D(-0.00112342, -0.999997, 0.002221, 0.00301369, -0.00222437, -0.999993, 0.999995, -0.00111673, 0.00301617, -0.498886, -0.00222081, 0.000391245)
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building2/Cube3" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building2/Cube3" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building2/Cube3" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building2/Cube3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building2/Cube3/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Building3" type="Node3D" parent="TestScene"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, -0.403293, 0, -0.210202)
+
+[node name="Plane3" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.30751, -1.84251)
+
+[node name="U" parent="TestScene/Building3/Plane3" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane4" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.19877, -1.17059)
+
+[node name="U" parent="TestScene/Building3/Plane4" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane11" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.96968, -1.84251)
+
+[node name="U" parent="TestScene/Building3/Plane11" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane12" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.86093, -1.17059)
+
+[node name="U" parent="TestScene/Building3/Plane12" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane5" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 1.81434, 2.39364, -1.91414)
+
+[node name="U" parent="TestScene/Building3/Plane5" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane6" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 2.22973, 2.49592, -1.25052)
+
+[node name="U" parent="TestScene/Building3/Plane6" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane7" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.88333, 1.54246, -1.7675)
+
+[node name="U" parent="TestScene/Building3/Plane7" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane8" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.30605, 1.64791, -1.10902)
+
+[node name="U" parent="TestScene/Building3/Plane8" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane9" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.94436, 0.791422, -1.68176)
+
+[node name="U" parent="TestScene/Building3/Plane9" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane10" parent="TestScene/Building3" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.36707, 0.896869, -1.02329)
+
+[node name="U" parent="TestScene/Building3/Plane10" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Cube2" parent="TestScene/Building3" instance=ExtResource("1_34214")]
+transform = Transform3D(1.43986, -0.28495, 0.978067, 0, 3.17256, 0.31404, -0.897314, -0.45724, 1.56944, 2.87111, 1.3413, -1.88848)
+
+[node name="F" parent="TestScene/Building3/Cube2" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building3/Cube2" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building3/Cube2" index="2"]
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building3/Cube2" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building3/Cube2" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building3/Cube2" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building3/Cube2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building3/Cube2/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Cube3" parent="TestScene/Building3" instance=ExtResource("1_34214")]
+transform = Transform3D(1.29783, 0.0115935, 0.894188, 0, 2.90048, -0.012777, -0.808804, 0.0186033, 1.43484, 2.81548, 2.99843, -1.93984)
+
+[node name="F" parent="TestScene/Building3/Cube3" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building3/Cube3" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building3/Cube3" index="2"]
+transform = Transform3D(-0.00112342, -0.999997, 0.002221, 0.00301369, -0.00222437, -0.999993, 0.999995, -0.00111673, 0.00301617, -0.498886, -0.00222081, 0.000391245)
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building3/Cube3" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building3/Cube3" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building3/Cube3" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building3/Cube3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building3/Cube3/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Building5" type="Node3D" parent="TestScene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.429205, 0, -4.07903)
+
+[node name="Plane3" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.30751, -1.84251)
+
+[node name="U" parent="TestScene/Building5/Plane3" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane4" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.19877, -1.17059)
+
+[node name="U" parent="TestScene/Building5/Plane4" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane11" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.96968, -1.84251)
+
+[node name="U" parent="TestScene/Building5/Plane11" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane12" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.86093, -1.17059)
+
+[node name="U" parent="TestScene/Building5/Plane12" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane5" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 1.81434, 2.39364, -1.91414)
+
+[node name="U" parent="TestScene/Building5/Plane5" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane6" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 2.22973, 2.49592, -1.25052)
+
+[node name="U" parent="TestScene/Building5/Plane6" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane7" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.88333, 1.54246, -1.7675)
+
+[node name="U" parent="TestScene/Building5/Plane7" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane8" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.30605, 1.64791, -1.10902)
+
+[node name="U" parent="TestScene/Building5/Plane8" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane9" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.94436, 0.791422, -1.68176)
+
+[node name="U" parent="TestScene/Building5/Plane9" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane10" parent="TestScene/Building5" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.36707, 0.896869, -1.02329)
+
+[node name="U" parent="TestScene/Building5/Plane10" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Cube2" parent="TestScene/Building5" instance=ExtResource("1_34214")]
+transform = Transform3D(1.43986, -0.28495, 0.978067, 0, 3.17256, 0.31404, -0.897314, -0.45724, 1.56944, 2.87111, 1.3413, -1.88848)
+
+[node name="F" parent="TestScene/Building5/Cube2" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building5/Cube2" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building5/Cube2" index="2"]
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building5/Cube2" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building5/Cube2" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building5/Cube2" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building5/Cube2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building5/Cube2/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Cube3" parent="TestScene/Building5" instance=ExtResource("1_34214")]
+transform = Transform3D(1.29783, 0.0115935, 0.894188, 0, 2.90048, -0.012777, -0.808804, 0.0186033, 1.43484, 2.81548, 2.99843, -1.93984)
+
+[node name="F" parent="TestScene/Building5/Cube3" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building5/Cube3" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building5/Cube3" index="2"]
+transform = Transform3D(-0.00112342, -0.999997, 0.002221, 0.00301369, -0.00222437, -0.999993, 0.999995, -0.00111673, 0.00301617, -0.498886, -0.00222081, 0.000391245)
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building5/Cube3" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building5/Cube3" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building5/Cube3" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building5/Cube3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building5/Cube3/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Building6" type="Node3D" parent="TestScene"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0.443686, 0, -4.28923)
+
+[node name="Plane3" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.30751, -1.84251)
+
+[node name="U" parent="TestScene/Building6/Plane3" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane4" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.19877, -1.17059)
+
+[node name="U" parent="TestScene/Building6/Plane4" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane11" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.96968, -1.84251)
+
+[node name="U" parent="TestScene/Building6/Plane11" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane12" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.86093, -1.17059)
+
+[node name="U" parent="TestScene/Building6/Plane12" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane5" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 1.81434, 2.39364, -1.91414)
+
+[node name="U" parent="TestScene/Building6/Plane5" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane6" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 2.22973, 2.49592, -1.25052)
+
+[node name="U" parent="TestScene/Building6/Plane6" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane7" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.88333, 1.54246, -1.7675)
+
+[node name="U" parent="TestScene/Building6/Plane7" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane8" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.30605, 1.64791, -1.10902)
+
+[node name="U" parent="TestScene/Building6/Plane8" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane9" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.94436, 0.791422, -1.68176)
+
+[node name="U" parent="TestScene/Building6/Plane9" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane10" parent="TestScene/Building6" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.36707, 0.896869, -1.02329)
+
+[node name="U" parent="TestScene/Building6/Plane10" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Cube2" parent="TestScene/Building6" instance=ExtResource("1_34214")]
+transform = Transform3D(1.43986, -0.28495, 0.978067, 0, 3.17256, 0.31404, -0.897314, -0.45724, 1.56944, 2.87111, 1.3413, -1.88848)
+
+[node name="F" parent="TestScene/Building6/Cube2" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building6/Cube2" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building6/Cube2" index="2"]
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building6/Cube2" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building6/Cube2" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building6/Cube2" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building6/Cube2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building6/Cube2/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Cube3" parent="TestScene/Building6" instance=ExtResource("1_34214")]
+transform = Transform3D(1.29783, 0.0115935, 0.894188, 0, 2.90048, -0.012777, -0.808804, 0.0186033, 1.43484, 2.81548, 2.99843, -1.93984)
+
+[node name="F" parent="TestScene/Building6/Cube3" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building6/Cube3" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building6/Cube3" index="2"]
+transform = Transform3D(-0.00112342, -0.999997, 0.002221, 0.00301369, -0.00222437, -0.999993, 0.999995, -0.00111673, 0.00301617, -0.498886, -0.00222081, 0.000391245)
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building6/Cube3" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building6/Cube3" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building6/Cube3" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building6/Cube3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building6/Cube3/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Building7" type="Node3D" parent="TestScene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10292, 0, -8.70452)
+
+[node name="Plane3" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.30751, -1.84251)
+
+[node name="U" parent="TestScene/Building7/Plane3" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane4" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.19877, -1.17059)
+
+[node name="U" parent="TestScene/Building7/Plane4" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane11" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.96968, -1.84251)
+
+[node name="U" parent="TestScene/Building7/Plane11" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane12" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.86093, -1.17059)
+
+[node name="U" parent="TestScene/Building7/Plane12" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane5" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 1.81434, 2.39364, -1.91414)
+
+[node name="U" parent="TestScene/Building7/Plane5" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane6" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 2.22973, 2.49592, -1.25052)
+
+[node name="U" parent="TestScene/Building7/Plane6" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane7" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.88333, 1.54246, -1.7675)
+
+[node name="U" parent="TestScene/Building7/Plane7" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane8" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.30605, 1.64791, -1.10902)
+
+[node name="U" parent="TestScene/Building7/Plane8" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane9" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.94436, 0.791422, -1.68176)
+
+[node name="U" parent="TestScene/Building7/Plane9" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane10" parent="TestScene/Building7" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.36707, 0.896869, -1.02329)
+
+[node name="U" parent="TestScene/Building7/Plane10" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Cube2" parent="TestScene/Building7" instance=ExtResource("1_34214")]
+transform = Transform3D(1.43986, -0.28495, 0.978067, 0, 3.17256, 0.31404, -0.897314, -0.45724, 1.56944, 2.87111, 1.3413, -1.88848)
+
+[node name="F" parent="TestScene/Building7/Cube2" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building7/Cube2" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building7/Cube2" index="2"]
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building7/Cube2" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building7/Cube2" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building7/Cube2" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building7/Cube2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building7/Cube2/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Cube3" parent="TestScene/Building7" instance=ExtResource("1_34214")]
+transform = Transform3D(1.29783, 0.0115935, 0.894188, 0, 2.90048, -0.012777, -0.808804, 0.0186033, 1.43484, 2.81548, 2.99843, -1.93984)
+
+[node name="F" parent="TestScene/Building7/Cube3" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building7/Cube3" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building7/Cube3" index="2"]
+transform = Transform3D(-0.00112342, -0.999997, 0.002221, 0.00301369, -0.00222437, -0.999993, 0.999995, -0.00111673, 0.00301617, -0.498886, -0.00222081, 0.000391245)
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building7/Cube3" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building7/Cube3" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building7/Cube3" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building7/Cube3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building7/Cube3/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Building8" type="Node3D" parent="TestScene"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34311, 0, -8.91472)
+
+[node name="Plane3" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.30751, -1.84251)
+
+[node name="U" parent="TestScene/Building8/Plane3" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane4" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.19877, -1.17059)
+
+[node name="U" parent="TestScene/Building8/Plane4" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane11" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.96968, -1.84251)
+
+[node name="U" parent="TestScene/Building8/Plane11" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane12" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.86093, -1.17059)
+
+[node name="U" parent="TestScene/Building8/Plane12" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane5" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 1.81434, 2.39364, -1.91414)
+
+[node name="U" parent="TestScene/Building8/Plane5" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane6" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 2.22973, 2.49592, -1.25052)
+
+[node name="U" parent="TestScene/Building8/Plane6" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane7" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.88333, 1.54246, -1.7675)
+
+[node name="U" parent="TestScene/Building8/Plane7" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane8" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.30605, 1.64791, -1.10902)
+
+[node name="U" parent="TestScene/Building8/Plane8" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane9" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.94436, 0.791422, -1.68176)
+
+[node name="U" parent="TestScene/Building8/Plane9" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane10" parent="TestScene/Building8" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.36707, 0.896869, -1.02329)
+
+[node name="U" parent="TestScene/Building8/Plane10" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Cube2" parent="TestScene/Building8" instance=ExtResource("1_34214")]
+transform = Transform3D(1.43986, -0.28495, 0.978067, 0, 3.17256, 0.31404, -0.897314, -0.45724, 1.56944, 2.87111, 1.3413, -1.88848)
+
+[node name="F" parent="TestScene/Building8/Cube2" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building8/Cube2" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building8/Cube2" index="2"]
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building8/Cube2" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building8/Cube2" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building8/Cube2" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building8/Cube2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building8/Cube2/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Cube3" parent="TestScene/Building8" instance=ExtResource("1_34214")]
+transform = Transform3D(1.29783, 0.0115935, 0.894188, 0, 2.90048, -0.012777, -0.808804, 0.0186033, 1.43484, 2.81548, 2.99843, -1.93984)
+
+[node name="F" parent="TestScene/Building8/Cube3" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building8/Cube3" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building8/Cube3" index="2"]
+transform = Transform3D(-0.00112342, -0.999997, 0.002221, 0.00301369, -0.00222437, -0.999993, 0.999995, -0.00111673, 0.00301617, -0.498886, -0.00222081, 0.000391245)
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building8/Cube3" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building8/Cube3" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building8/Cube3" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building8/Cube3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building8/Cube3/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Building4" type="Node3D" parent="TestScene"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, -1.12719, 4.76837e-07, 2.78433)
+
+[node name="Plane3" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.30751, -1.84251)
+
+[node name="U" parent="TestScene/Building4/Plane3" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane4" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.19877, -1.17059)
+
+[node name="U" parent="TestScene/Building4/Plane4" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane11" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 1.8976, 3.96968, -1.84251)
+
+[node name="U" parent="TestScene/Building4/Plane11" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane12" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.311429, -0.348515, -0.0470985, -0.0651724, 0.0102555, -0.551325, 0.464541, 0.235084, -0.0457727, 2.29771, 3.86093, -1.17059)
+
+[node name="U" parent="TestScene/Building4/Plane12" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane5" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 1.81434, 2.39364, -1.91414)
+
+[node name="U" parent="TestScene/Building4/Plane5" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane6" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.320307, -0.3452, 0.0278248, 0.0849059, 0.0185902, -0.548325, 0.455224, 0.239424, 0.0826924, 2.22973, 2.49592, -1.25052)
+
+[node name="U" parent="TestScene/Building4/Plane6" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane7" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.88333, 1.54246, -1.7675)
+
+[node name="U" parent="TestScene/Building4/Plane7" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane8" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.30605, 1.64791, -1.10902)
+
+[node name="U" parent="TestScene/Building4/Plane8" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane9" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 1.94436, 0.791422, -1.68176)
+
+[node name="U" parent="TestScene/Building4/Plane9" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Plane10" parent="TestScene/Building4" instance=ExtResource("2_w23ue")]
+transform = Transform3D(0.325229, -0.342374, 0.0327347, 0.0873295, 0.0162111, -0.548087, 0.451258, 0.243618, 0.0824758, 2.36707, 0.896869, -1.02329)
+
+[node name="U" parent="TestScene/Building4/Plane10" index="0"]
+material_override = SubResource("StandardMaterial3D_jcw5a")
+
+[node name="Cube2" parent="TestScene/Building4" instance=ExtResource("1_34214")]
+transform = Transform3D(1.43986, -0.28495, 0.978067, 0, 3.17256, 0.31404, -0.897314, -0.45724, 1.56944, 2.87111, 1.3413, -1.88848)
+
+[node name="F" parent="TestScene/Building4/Cube2" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building4/Cube2" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building4/Cube2" index="2"]
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building4/Cube2" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building4/Cube2" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building4/Cube2" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building4/Cube2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building4/Cube2/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Cube3" parent="TestScene/Building4" instance=ExtResource("1_34214")]
+transform = Transform3D(1.29783, 0.0115935, 0.894188, 0, 2.90048, -0.012777, -0.808804, 0.0186033, 1.43484, 2.81548, 2.99843, -1.93984)
+
+[node name="F" parent="TestScene/Building4/Cube3" index="0"]
+material_override = SubResource("StandardMaterial3D_egoyj")
+
+[node name="B" parent="TestScene/Building4/Cube3" index="1"]
+material_override = SubResource("StandardMaterial3D_36rnw")
+
+[node name="L" parent="TestScene/Building4/Cube3" index="2"]
+transform = Transform3D(-0.00112342, -0.999997, 0.002221, 0.00301369, -0.00222437, -0.999993, 0.999995, -0.00111673, 0.00301617, -0.498886, -0.00222081, 0.000391245)
+material_override = SubResource("StandardMaterial3D_740v3")
+
+[node name="R" parent="TestScene/Building4/Cube3" index="3"]
+material_override = SubResource("StandardMaterial3D_iwntv")
+
+[node name="U" parent="TestScene/Building4/Cube3" index="4"]
+material_override = SubResource("StandardMaterial3D_mgy0k")
+
+[node name="D" parent="TestScene/Building4/Cube3" index="5"]
+material_override = SubResource("StandardMaterial3D_2ydjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TestScene/Building4/Cube3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestScene/Building4/Cube3/StaticBody3D"]
+shape = SubResource("BoxShape3D_6ttwh")
+
+[node name="Mailman" type="Node3D" parent="TestScene"]
+transform = Transform3D(-1, 1.08056e-08, 8.67524e-08, 0, 0.992332, -0.123601, -8.74228e-08, -0.123601, -0.992332, 0, -0.713, 0.808)
+
+[node name="Sphere" parent="TestScene/Mailman" instance=ExtResource("7_u8h7x")]
+transform = Transform3D(0.487267, 0, 0, 0, 0.365263, 0.32251, 0, -0.32251, 0.365263, 0, 1.91067, 0)
+
+[node name="Spherecap" parent="TestScene/Mailman/Sphere" index="0"]
+material_override = SubResource("StandardMaterial3D_htt44")
+
+[node name="Spherecap2" parent="TestScene/Mailman/Sphere" index="1"]
+material_override = SubResource("StandardMaterial3D_lxmrt")
+
+[node name="Spherecap3" parent="TestScene/Mailman/Sphere" index="2"]
+material_override = SubResource("StandardMaterial3D_0dqbb")
+
+[node name="Spherecap6" parent="TestScene/Mailman/Sphere" index="5"]
+material_override = SubResource("StandardMaterial3D_7kyp4")
+
+[node name="Spherecap8" parent="TestScene/Mailman/Sphere" index="7"]
+material_override = SubResource("StandardMaterial3D_c636n")
+
+[node name="Spherecap9" parent="TestScene/Mailman/Sphere" index="8"]
+material_override = SubResource("StandardMaterial3D_7qmno")
+
+[node name="Spherecap10" parent="TestScene/Mailman/Sphere" index="9"]
+material_override = SubResource("StandardMaterial3D_ybii6")
+
+[node name="Spherecap11" parent="TestScene/Mailman/Sphere" index="10"]
+material_override = SubResource("StandardMaterial3D_jbxn6")
+
+[node name="Spherecap12" parent="TestScene/Mailman/Sphere" index="11"]
+material_override = SubResource("StandardMaterial3D_xkkr5")
+
+[node name="Sphereside" parent="TestScene/Mailman/Sphere" index="12"]
+material_override = SubResource("StandardMaterial3D_j0k0r")
+
+[node name="Sphereside2" parent="TestScene/Mailman/Sphere" index="13"]
+material_override = SubResource("StandardMaterial3D_iv7s3")
+
+[node name="Sphereside3" parent="TestScene/Mailman/Sphere" index="14"]
+material_override = SubResource("StandardMaterial3D_a5swq")
+
+[node name="Sphereside4" parent="TestScene/Mailman/Sphere" index="15"]
+material_override = SubResource("StandardMaterial3D_1n4cf")
+
+[node name="Sphereside5" parent="TestScene/Mailman/Sphere" index="16"]
+material_override = SubResource("StandardMaterial3D_yqs1t")
+
+[node name="Sphereside6" parent="TestScene/Mailman/Sphere" index="17"]
+material_override = SubResource("StandardMaterial3D_8r8if")
+
+[node name="Sphereside7" parent="TestScene/Mailman/Sphere" index="18"]
+material_override = SubResource("StandardMaterial3D_8ok77")
+
+[node name="Sphereside8" parent="TestScene/Mailman/Sphere" index="19"]
+material_override = SubResource("StandardMaterial3D_0m2gm")
+
+[node name="Sphereside9" parent="TestScene/Mailman/Sphere" index="20"]
+material_override = SubResource("StandardMaterial3D_3jjqn")
+
+[node name="Sphereside10" parent="TestScene/Mailman/Sphere" index="21"]
+material_override = SubResource("StandardMaterial3D_7tybo")
+
+[node name="Sphereside11" parent="TestScene/Mailman/Sphere" index="22"]
+material_override = SubResource("StandardMaterial3D_llwud")
+
+[node name="Sphereside12" parent="TestScene/Mailman/Sphere" index="23"]
+material_override = SubResource("StandardMaterial3D_pmf1j")
+
+[node name="Sphere2" parent="TestScene/Mailman" instance=ExtResource("7_u8h7x")]
+transform = Transform3D(0.275653, 0, 0, 0, 0.368015, 0, 0, 0, 0.281613, 0, 1.33606, 0.0918194)
+
+[node name="Spherecap7" parent="TestScene/Mailman/Sphere2" index="6"]
+material_override = SubResource("StandardMaterial3D_q37fi")
+
+[node name="Spherecap8" parent="TestScene/Mailman/Sphere2" index="7"]
+material_override = SubResource("StandardMaterial3D_6h4tp")
+
+[node name="Spherecap12" parent="TestScene/Mailman/Sphere2" index="11"]
+material_override = SubResource("StandardMaterial3D_fp27f")
+
+[node name="Sphereside" parent="TestScene/Mailman/Sphere2" index="12"]
+material_override = SubResource("StandardMaterial3D_ulp6b")
+
+[node name="Sphereside2" parent="TestScene/Mailman/Sphere2" index="13"]
+material_override = SubResource("StandardMaterial3D_y3b8o")
+
+[node name="Sphereside3" parent="TestScene/Mailman/Sphere2" index="14"]
+material_override = SubResource("StandardMaterial3D_evqcn")
+
+[node name="Sphereside4" parent="TestScene/Mailman/Sphere2" index="15"]
+material_override = SubResource("StandardMaterial3D_wgtek")
+
+[node name="Sphereside5" parent="TestScene/Mailman/Sphere2" index="16"]
+material_override = SubResource("StandardMaterial3D_4yovo")
+
+[node name="Sphereside7" parent="TestScene/Mailman/Sphere2" index="18"]
+material_override = SubResource("StandardMaterial3D_msatq")
+
+[node name="Sphereside8" parent="TestScene/Mailman/Sphere2" index="19"]
+material_override = SubResource("StandardMaterial3D_fi6g6")
+
+[node name="Sphereside9" parent="TestScene/Mailman/Sphere2" index="20"]
+material_override = SubResource("StandardMaterial3D_a1vux")
+
+[node name="Sphereside10" parent="TestScene/Mailman/Sphere2" index="21"]
+material_override = SubResource("StandardMaterial3D_qv7ha")
+
+[node name="Sphereside11" parent="TestScene/Mailman/Sphere2" index="22"]
+material_override = SubResource("StandardMaterial3D_agf5p")
+
+[node name="Sphere5" parent="TestScene/Mailman" instance=ExtResource("7_u8h7x")]
+transform = Transform3D(0.0971784, 0, 0, 0, 0.211074, 0, 0, 0, 0.180466, -0.091267, 0.950226, 0.0918194)
+
+[node name="Spherecap7" parent="TestScene/Mailman/Sphere5" index="6"]
+material_override = SubResource("StandardMaterial3D_gwnuj")
+
+[node name="Spherecap8" parent="TestScene/Mailman/Sphere5" index="7"]
+material_override = SubResource("StandardMaterial3D_gwef3")
+
+[node name="Sphereside" parent="TestScene/Mailman/Sphere5" index="12"]
+material_override = SubResource("StandardMaterial3D_o8pph")
+
+[node name="Sphereside2" parent="TestScene/Mailman/Sphere5" index="13"]
+material_override = SubResource("StandardMaterial3D_a0rcd")
+
+[node name="Sphereside3" parent="TestScene/Mailman/Sphere5" index="14"]
+material_override = SubResource("StandardMaterial3D_j0bgj")
+
+[node name="Sphereside4" parent="TestScene/Mailman/Sphere5" index="15"]
+material_override = SubResource("StandardMaterial3D_0yple")
+
+[node name="Sphereside5" parent="TestScene/Mailman/Sphere5" index="16"]
+material_override = SubResource("StandardMaterial3D_wsjji")
+
+[node name="Sphereside6" parent="TestScene/Mailman/Sphere5" index="17"]
+material_override = SubResource("StandardMaterial3D_vayyq")
+
+[node name="Sphereside7" parent="TestScene/Mailman/Sphere5" index="18"]
+material_override = SubResource("StandardMaterial3D_7rsqo")
+
+[node name="Sphereside8" parent="TestScene/Mailman/Sphere5" index="19"]
+material_override = SubResource("StandardMaterial3D_qxqau")
+
+[node name="Sphere6" parent="TestScene/Mailman" instance=ExtResource("7_u8h7x")]
+transform = Transform3D(0.0971784, 0, 0, 0, 0.211074, 0, 0, 0, 0.180466, 0.0941026, 0.950226, 0.0918194)
+
+[node name="Spherecap7" parent="TestScene/Mailman/Sphere6" index="6"]
+material_override = SubResource("StandardMaterial3D_v33ay")
+
+[node name="Spherecap8" parent="TestScene/Mailman/Sphere6" index="7"]
+material_override = SubResource("StandardMaterial3D_n44h8")
+
+[node name="Sphereside" parent="TestScene/Mailman/Sphere6" index="12"]
+material_override = SubResource("StandardMaterial3D_md8lo")
+
+[node name="Sphereside2" parent="TestScene/Mailman/Sphere6" index="13"]
+material_override = SubResource("StandardMaterial3D_rfhn5")
+
+[node name="Sphereside4" parent="TestScene/Mailman/Sphere6" index="15"]
+material_override = SubResource("StandardMaterial3D_6hyqh")
+
+[node name="Sphereside5" parent="TestScene/Mailman/Sphere6" index="16"]
+material_override = SubResource("StandardMaterial3D_1syng")
+
+[node name="Sphereside6" parent="TestScene/Mailman/Sphere6" index="17"]
+material_override = SubResource("StandardMaterial3D_vfdr2")
+
+[node name="Sphereside7" parent="TestScene/Mailman/Sphere6" index="18"]
+material_override = SubResource("StandardMaterial3D_rc6xe")
+
+[node name="Sphereside8" parent="TestScene/Mailman/Sphere6" index="19"]
+material_override = SubResource("StandardMaterial3D_4nr42")
+
+[node name="Sphereside9" parent="TestScene/Mailman/Sphere6" index="20"]
+material_override = SubResource("StandardMaterial3D_xiwaj")
+
+[node name="Sphere3" parent="TestScene/Mailman" instance=ExtResource("7_u8h7x")]
+transform = Transform3D(0.10099, 0.0537377, 0, -0.0180892, 0.300013, 0, 0, 0, 0.101687, -0.271158, 1.27535, 0.0918194)
+
+[node name="Spherecap" parent="TestScene/Mailman/Sphere3" index="0"]
+material_override = SubResource("StandardMaterial3D_ddixa")
+
+[node name="Spherecap2" parent="TestScene/Mailman/Sphere3" index="1"]
+material_override = SubResource("StandardMaterial3D_y55ik")
+
+[node name="Spherecap3" parent="TestScene/Mailman/Sphere3" index="2"]
+material_override = SubResource("StandardMaterial3D_n7ytw")
+
+[node name="Spherecap4" parent="TestScene/Mailman/Sphere3" index="3"]
+material_override = SubResource("StandardMaterial3D_0v72o")
+
+[node name="Spherecap7" parent="TestScene/Mailman/Sphere3" index="6"]
+material_override = SubResource("StandardMaterial3D_uosn3")
+
+[node name="Spherecap8" parent="TestScene/Mailman/Sphere3" index="7"]
+material_override = SubResource("StandardMaterial3D_tg0d3")
+
+[node name="Spherecap9" parent="TestScene/Mailman/Sphere3" index="8"]
+material_override = SubResource("StandardMaterial3D_na2kh")
+
+[node name="Spherecap10" parent="TestScene/Mailman/Sphere3" index="9"]
+material_override = SubResource("StandardMaterial3D_15snk")
+
+[node name="Spherecap11" parent="TestScene/Mailman/Sphere3" index="10"]
+material_override = SubResource("StandardMaterial3D_efyvc")
+
+[node name="Spherecap12" parent="TestScene/Mailman/Sphere3" index="11"]
+material_override = SubResource("StandardMaterial3D_xx6vp")
+
+[node name="Sphereside" parent="TestScene/Mailman/Sphere3" index="12"]
+material_override = SubResource("StandardMaterial3D_unyta")
+
+[node name="Sphereside2" parent="TestScene/Mailman/Sphere3" index="13"]
+material_override = SubResource("StandardMaterial3D_4gc6t")
+
+[node name="Sphereside3" parent="TestScene/Mailman/Sphere3" index="14"]
+material_override = SubResource("StandardMaterial3D_qrofp")
+
+[node name="Sphereside4" parent="TestScene/Mailman/Sphere3" index="15"]
+material_override = SubResource("StandardMaterial3D_71c7q")
+
+[node name="Sphereside7" parent="TestScene/Mailman/Sphere3" index="18"]
+material_override = SubResource("StandardMaterial3D_r35ch")
+
+[node name="Sphereside8" parent="TestScene/Mailman/Sphere3" index="19"]
+material_override = SubResource("StandardMaterial3D_2jv0g")
+
+[node name="Sphereside9" parent="TestScene/Mailman/Sphere3" index="20"]
+material_override = SubResource("StandardMaterial3D_qmlft")
+
+[node name="Sphereside10" parent="TestScene/Mailman/Sphere3" index="21"]
+material_override = SubResource("StandardMaterial3D_st2e4")
+
+[node name="Sphereside11" parent="TestScene/Mailman/Sphere3" index="22"]
+material_override = SubResource("StandardMaterial3D_jlbtd")
+
+[node name="Sphere4" parent="TestScene/Mailman" instance=ExtResource("7_u8h7x")]
+transform = Transform3D(0.0992495, -0.0772291, 0, 0.0259969, 0.294841, 0, 0, 0, 0.101687, 0.25918, 1.3092, 0.0918194)
+
+[node name="Spherecap7" parent="TestScene/Mailman/Sphere4" index="6"]
+material_override = SubResource("StandardMaterial3D_6hbcn")
+
+[node name="Spherecap8" parent="TestScene/Mailman/Sphere4" index="7"]
+material_override = SubResource("StandardMaterial3D_j0wcc")
+
+[node name="Spherecap9" parent="TestScene/Mailman/Sphere4" index="8"]
+material_override = SubResource("StandardMaterial3D_phwx6")
+
+[node name="Spherecap10" parent="TestScene/Mailman/Sphere4" index="9"]
+material_override = SubResource("StandardMaterial3D_4qs37")
+
+[node name="Spherecap11" parent="TestScene/Mailman/Sphere4" index="10"]
+material_override = SubResource("StandardMaterial3D_8f16a")
+
+[node name="Spherecap12" parent="TestScene/Mailman/Sphere4" index="11"]
+material_override = SubResource("StandardMaterial3D_os62y")
+
+[node name="Sphereside" parent="TestScene/Mailman/Sphere4" index="12"]
+material_override = SubResource("StandardMaterial3D_ftd18")
+
+[node name="Sphereside2" parent="TestScene/Mailman/Sphere4" index="13"]
+material_override = SubResource("StandardMaterial3D_nqo5e")
+
+[node name="Sphereside5" parent="TestScene/Mailman/Sphere4" index="16"]
+material_override = SubResource("StandardMaterial3D_4ohum")
+
+[node name="Sphereside6" parent="TestScene/Mailman/Sphere4" index="17"]
+material_override = SubResource("StandardMaterial3D_ycqio")
+
+[node name="Sphereside7" parent="TestScene/Mailman/Sphere4" index="18"]
+material_override = SubResource("StandardMaterial3D_ajs01")
+
+[node name="Sphereside8" parent="TestScene/Mailman/Sphere4" index="19"]
+material_override = SubResource("StandardMaterial3D_wjvsi")
+
+[node name="Sphereside9" parent="TestScene/Mailman/Sphere4" index="20"]
+material_override = SubResource("StandardMaterial3D_rc4uw")
+
+[node name="Sphereside10" parent="TestScene/Mailman/Sphere4" index="21"]
+material_override = SubResource("StandardMaterial3D_24yul")
+
+[node name="Sphereside11" parent="TestScene/Mailman/Sphere4" index="22"]
+material_override = SubResource("StandardMaterial3D_jnkf3")
+
+[node name="Sphereside12" parent="TestScene/Mailman/Sphere4" index="23"]
+material_override = SubResource("StandardMaterial3D_axriw")
+
+[node name="Cylinder2" parent="TestScene/Mailman" instance=ExtResource("8_lqyso")]
+transform = Transform3D(0.445924, 0, 0, 0, 0.213673, 0, 0, 0, 0.445924, 0, 2.29373, 0)
+
+[node name="CylinderTop" parent="TestScene/Mailman/Cylinder2" index="0"]
+material_override = SubResource("StandardMaterial3D_l30wo")
+
+[node name="CylinderBottom" parent="TestScene/Mailman/Cylinder2" index="1"]
+material_override = SubResource("StandardMaterial3D_0ilwc")
+
+[node name="Cylinderside1" parent="TestScene/Mailman/Cylinder2" index="2"]
+material_override = SubResource("StandardMaterial3D_747tu")
+
+[node name="Cylinderside2" parent="TestScene/Mailman/Cylinder2" index="3"]
+material_override = SubResource("StandardMaterial3D_ceqq6")
+
+[node name="Cylinderside3" parent="TestScene/Mailman/Cylinder2" index="4"]
+material_override = SubResource("StandardMaterial3D_1at8y")
+
+[node name="Cylinderside4" parent="TestScene/Mailman/Cylinder2" index="5"]
+material_override = SubResource("StandardMaterial3D_r78ja")
+
+[node name="Cylinderside5" parent="TestScene/Mailman/Cylinder2" index="6"]
+material_override = SubResource("StandardMaterial3D_03ct1")
+
+[node name="Cylinderside6" parent="TestScene/Mailman/Cylinder2" index="7"]
+material_override = SubResource("StandardMaterial3D_e3udn")
+
+[node name="Cylinderside7" parent="TestScene/Mailman/Cylinder2" index="8"]
+material_override = SubResource("StandardMaterial3D_5mtgv")
+
+[node name="Cylinderside8" parent="TestScene/Mailman/Cylinder2" index="9"]
+material_override = SubResource("StandardMaterial3D_q5xcg")
+
+[node name="Cylinder3" parent="TestScene/Mailman" instance=ExtResource("8_lqyso")]
+transform = Transform3D(0.506352, 0, 0, 0, 0.0731084, 0.165759, 0, -0.0215988, 0.561067, 0, 2.0826, -0.119999)
+
+[node name="CylinderTop" parent="TestScene/Mailman/Cylinder3" index="0"]
+material_override = SubResource("StandardMaterial3D_ymskw")
+
+[node name="CylinderBottom" parent="TestScene/Mailman/Cylinder3" index="1"]
+material_override = SubResource("StandardMaterial3D_is3fg")
+
+[node name="Cylinderside1" parent="TestScene/Mailman/Cylinder3" index="2"]
+material_override = SubResource("StandardMaterial3D_5pdu7")
+
+[node name="Cylinderside2" parent="TestScene/Mailman/Cylinder3" index="3"]
+material_override = SubResource("StandardMaterial3D_nh4us")
+
+[node name="Cylinderside3" parent="TestScene/Mailman/Cylinder3" index="4"]
+material_override = SubResource("StandardMaterial3D_d0kij")
+
+[node name="Cylinderside4" parent="TestScene/Mailman/Cylinder3" index="5"]
+material_override = SubResource("StandardMaterial3D_o8x85")
+
+[node name="Cylinderside5" parent="TestScene/Mailman/Cylinder3" index="6"]
+material_override = SubResource("StandardMaterial3D_m0s2c")
+
+[node name="Cylinderside6" parent="TestScene/Mailman/Cylinder3" index="7"]
+material_override = SubResource("StandardMaterial3D_3s5e2")
+
+[node name="Cylinderside7" parent="TestScene/Mailman/Cylinder3" index="8"]
+material_override = SubResource("StandardMaterial3D_w83xq")
+
+[node name="Cylinderside8" parent="TestScene/Mailman/Cylinder3" index="9"]
+material_override = SubResource("StandardMaterial3D_1yroc")
+
+[node name="Cylinder4" parent="TestScene/Mailman" instance=ExtResource("8_lqyso")]
+transform = Transform3D(0.286088, -0.0315633, -0.0122982, 0.279278, 0.032396, 3.80757e-09, 0.012626, -0.00139299, 0.278662, 0.00359663, 1.28258, 0.0607995)
+
+[node name="CylinderTop" parent="TestScene/Mailman/Cylinder4" index="0"]
+material_override = SubResource("StandardMaterial3D_34k48")
+
+[node name="CylinderBottom" parent="TestScene/Mailman/Cylinder4" index="1"]
+material_override = SubResource("StandardMaterial3D_jsb11")
+
+[node name="Cylinderside1" parent="TestScene/Mailman/Cylinder4" index="2"]
+material_override = SubResource("StandardMaterial3D_x3pa3")
+
+[node name="Cylinderside2" parent="TestScene/Mailman/Cylinder4" index="3"]
+material_override = SubResource("StandardMaterial3D_s4d78")
+
+[node name="Cylinderside3" parent="TestScene/Mailman/Cylinder4" index="4"]
+material_override = SubResource("StandardMaterial3D_oelvr")
+
+[node name="Cylinderside4" parent="TestScene/Mailman/Cylinder4" index="5"]
+material_override = SubResource("StandardMaterial3D_s7i8e")
+
+[node name="Cylinderside5" parent="TestScene/Mailman/Cylinder4" index="6"]
+material_override = SubResource("StandardMaterial3D_pnei6")
+
+[node name="Cylinderside6" parent="TestScene/Mailman/Cylinder4" index="7"]
+material_override = SubResource("StandardMaterial3D_3vk1v")
+
+[node name="Cylinderside7" parent="TestScene/Mailman/Cylinder4" index="8"]
+material_override = SubResource("StandardMaterial3D_011pq")
+
+[node name="Tetrahedron" parent="TestScene/Mailman" instance=ExtResource("9_quidg")]
+transform = Transform3D(-0.0830974, -0.2444, -0.162675, 0.1045, -0.182616, 0.220977, -0.274361, 0.00446716, 0.133437, -0.473884, 1.74645, 0.13119)
+
+[node name="Tetrabase" parent="TestScene/Mailman/Tetrahedron" index="0"]
+material_override = SubResource("StandardMaterial3D_smigd")
+
+[node name="Tetraside" parent="TestScene/Mailman/Tetrahedron" index="1"]
+material_override = SubResource("StandardMaterial3D_odph6")
+
+[node name="Tetraside2" parent="TestScene/Mailman/Tetrahedron" index="2"]
+material_override = SubResource("StandardMaterial3D_cifov")
+
+[node name="Tetraside3" parent="TestScene/Mailman/Tetrahedron" index="3"]
+material_override = SubResource("StandardMaterial3D_04hl1")
+
+[node name="Tetrahedron2" parent="TestScene/Mailman" instance=ExtResource("9_quidg")]
+transform = Transform3D(0.168876, 0.251969, 0.0330421, 0.249369, -0.171949, 0.0367155, 0.0489401, 0.00668357, -0.301098, 0.471748, 1.74645, -0.0406108)
+
+[node name="Tetraside" parent="TestScene/Mailman/Tetrahedron2" index="1"]
+material_override = SubResource("StandardMaterial3D_l5qlm")
+
+[node name="Tetraside2" parent="TestScene/Mailman/Tetrahedron2" index="2"]
+material_override = SubResource("StandardMaterial3D_lx3if")
+
+[node name="Tetraside3" parent="TestScene/Mailman/Tetrahedron2" index="3"]
+material_override = SubResource("StandardMaterial3D_bs7rl")
+
+[editable path="TestScene/Plane"]
+[editable path="TestScene/Plane2"]
+[editable path="TestScene/Cube"]
+[editable path="TestScene/Building/Plane3"]
+[editable path="TestScene/Building/Plane4"]
+[editable path="TestScene/Building/Plane11"]
+[editable path="TestScene/Building/Plane12"]
+[editable path="TestScene/Building/Plane5"]
+[editable path="TestScene/Building/Plane6"]
+[editable path="TestScene/Building/Plane7"]
+[editable path="TestScene/Building/Plane8"]
+[editable path="TestScene/Building/Plane9"]
+[editable path="TestScene/Building/Plane10"]
+[editable path="TestScene/Building/Cube2"]
+[editable path="TestScene/Building/Cube3"]
+[editable path="TestScene/Building2/Plane3"]
+[editable path="TestScene/Building2/Plane4"]
+[editable path="TestScene/Building2/Plane11"]
+[editable path="TestScene/Building2/Plane12"]
+[editable path="TestScene/Building2/Plane5"]
+[editable path="TestScene/Building2/Plane6"]
+[editable path="TestScene/Building2/Plane7"]
+[editable path="TestScene/Building2/Plane8"]
+[editable path="TestScene/Building2/Plane9"]
+[editable path="TestScene/Building2/Plane10"]
+[editable path="TestScene/Building2/Cube2"]
+[editable path="TestScene/Building2/Cube3"]
+[editable path="TestScene/Building3/Plane3"]
+[editable path="TestScene/Building3/Plane4"]
+[editable path="TestScene/Building3/Plane11"]
+[editable path="TestScene/Building3/Plane12"]
+[editable path="TestScene/Building3/Plane5"]
+[editable path="TestScene/Building3/Plane6"]
+[editable path="TestScene/Building3/Plane7"]
+[editable path="TestScene/Building3/Plane8"]
+[editable path="TestScene/Building3/Plane9"]
+[editable path="TestScene/Building3/Plane10"]
+[editable path="TestScene/Building3/Cube2"]
+[editable path="TestScene/Building3/Cube3"]
+[editable path="TestScene/Building5/Plane3"]
+[editable path="TestScene/Building5/Plane4"]
+[editable path="TestScene/Building5/Plane11"]
+[editable path="TestScene/Building5/Plane12"]
+[editable path="TestScene/Building5/Plane5"]
+[editable path="TestScene/Building5/Plane6"]
+[editable path="TestScene/Building5/Plane7"]
+[editable path="TestScene/Building5/Plane8"]
+[editable path="TestScene/Building5/Plane9"]
+[editable path="TestScene/Building5/Plane10"]
+[editable path="TestScene/Building5/Cube2"]
+[editable path="TestScene/Building5/Cube3"]
+[editable path="TestScene/Building6/Plane3"]
+[editable path="TestScene/Building6/Plane4"]
+[editable path="TestScene/Building6/Plane11"]
+[editable path="TestScene/Building6/Plane12"]
+[editable path="TestScene/Building6/Plane5"]
+[editable path="TestScene/Building6/Plane6"]
+[editable path="TestScene/Building6/Plane7"]
+[editable path="TestScene/Building6/Plane8"]
+[editable path="TestScene/Building6/Plane9"]
+[editable path="TestScene/Building6/Plane10"]
+[editable path="TestScene/Building6/Cube2"]
+[editable path="TestScene/Building6/Cube3"]
+[editable path="TestScene/Building7/Plane3"]
+[editable path="TestScene/Building7/Plane4"]
+[editable path="TestScene/Building7/Plane11"]
+[editable path="TestScene/Building7/Plane12"]
+[editable path="TestScene/Building7/Plane5"]
+[editable path="TestScene/Building7/Plane6"]
+[editable path="TestScene/Building7/Plane7"]
+[editable path="TestScene/Building7/Plane8"]
+[editable path="TestScene/Building7/Plane9"]
+[editable path="TestScene/Building7/Plane10"]
+[editable path="TestScene/Building7/Cube2"]
+[editable path="TestScene/Building7/Cube3"]
+[editable path="TestScene/Building8/Plane3"]
+[editable path="TestScene/Building8/Plane4"]
+[editable path="TestScene/Building8/Plane11"]
+[editable path="TestScene/Building8/Plane12"]
+[editable path="TestScene/Building8/Plane5"]
+[editable path="TestScene/Building8/Plane6"]
+[editable path="TestScene/Building8/Plane7"]
+[editable path="TestScene/Building8/Plane8"]
+[editable path="TestScene/Building8/Plane9"]
+[editable path="TestScene/Building8/Plane10"]
+[editable path="TestScene/Building8/Cube2"]
+[editable path="TestScene/Building8/Cube3"]
+[editable path="TestScene/Building4/Plane3"]
+[editable path="TestScene/Building4/Plane4"]
+[editable path="TestScene/Building4/Plane11"]
+[editable path="TestScene/Building4/Plane12"]
+[editable path="TestScene/Building4/Plane5"]
+[editable path="TestScene/Building4/Plane6"]
+[editable path="TestScene/Building4/Plane7"]
+[editable path="TestScene/Building4/Plane8"]
+[editable path="TestScene/Building4/Plane9"]
+[editable path="TestScene/Building4/Plane10"]
+[editable path="TestScene/Building4/Cube2"]
+[editable path="TestScene/Building4/Cube3"]
+[editable path="TestScene/Mailman/Sphere"]
+[editable path="TestScene/Mailman/Sphere2"]
+[editable path="TestScene/Mailman/Sphere5"]
+[editable path="TestScene/Mailman/Sphere6"]
+[editable path="TestScene/Mailman/Sphere3"]
+[editable path="TestScene/Mailman/Sphere4"]
+[editable path="TestScene/Mailman/Cylinder2"]
+[editable path="TestScene/Mailman/Cylinder3"]
+[editable path="TestScene/Mailman/Cylinder4"]
+[editable path="TestScene/Mailman/Tetrahedron"]
+[editable path="TestScene/Mailman/Tetrahedron2"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://3rvcuwwn43lx"]
+
+[ext_resource type="Script" path="res://Scripts/ThumbnailButton.gd" id="1_b4crf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_45ax7"]
+bg_color = Color(0.435294, 0.435294, 0.435294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5f7qb"]
+bg_color = Color(0.215686, 0.215686, 0.215686, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aerdb"]
+bg_color = Color(0.113725, 0.113725, 0.113725, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16s3l"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_20tvi"]
+
+[node name="ThumbnailButton" type="Button"]
+modulate = Color(1, 1, 1, 0.0823529)
+theme_override_styles/normal = SubResource("StyleBoxFlat_45ax7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5f7qb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_aerdb")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_16s3l")
+theme_override_styles/focus = SubResource("StyleBoxFlat_20tvi")
+action_mode = 0
+script = ExtResource("1_b4crf")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

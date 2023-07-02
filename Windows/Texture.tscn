@@ -21,8 +21,6 @@ bg_color = Color(0.14902, 0.14902, 0.231373, 0.894118)
 [node name="Texture" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
 script = ExtResource("1_iy8j3")
 
 [node name="Panel" type="Panel" parent="."]
@@ -95,10 +93,10 @@ value = 1.0
 
 [node name="ResetPos" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 20.0
-offset_right = 35.0
-offset_bottom = 20.0
-rotation = 1.57079
+offset_left = 3.0
+offset_top = 42.0
+offset_right = 18.0
+offset_bottom = 62.0
 theme_override_font_sizes/font_size = 8
 text = "↺"
 

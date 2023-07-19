@@ -9,8 +9,7 @@ func _ready():
 
 func _process(_delta):
 	if self.visible:
-		#lineCount.text = "LN:" + str(textEdit.get_caret_line()) + "\nCL:" + str(textEdit.get_caret_column())
-		#C.workCode = textEdit.text
+
 		pass
 	pass
 

@@ -26,7 +26,7 @@ func loadCartridge(newDir):
 		## Load in the actual data
 		if firstLine == "==POLY64 CARTRIDGE==":
 			workCart = file.get_as_text()
-			text(0,150,"LOADED " + newDir,10,8)
+			text(0,150,"LOADED " + newDir,5,8)
 			setWorkCode()
 			codeWindow.loadCartridge()
 			textureWindow.loadCartridge()
@@ -44,7 +44,7 @@ func saveCartridge(newDir):
 	formatData()
 	file.store_string(workCart)
 	file = null
-	text(0,150,"SAVED " + newDir,10,8)
+	text(0,150,"SAVED " + newDir,5,8)
 
 ## Formatting save data to a readable P64 text file
 func formatData() -> String : 
@@ -61,6 +61,11 @@ func formatData() -> String :
 
 func _process(_delta):
 	pass
+
+func activateBootMenu():
+	for node in get_children():
+		node.visible = false
+	get_node("Menu").visible = true
 
 ## Switching between menus
 func activate(oldMenu, newMenu):

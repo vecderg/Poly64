@@ -1,7 +1,12 @@
-res://Windows/Menu.tscn
+res://Windows/Model.tscn
+res://Scripts/Parser.gd
+res://Scripts/Run.gd
 res://Console.tscn
+res://Scripts/Model.gd
+res://Windows/Menu.tscn
 res://Windows/Load.tscn
 res://Windows/Code.tscn
 res://Windows/Texture.tscn
 res://Prefabs/PixelButton.tscn
-res://Windows/Model.tscn
+res://Scripts/BootMenu.gd
+res://Scripts/Console.gd

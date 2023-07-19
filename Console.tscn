@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://nxk83y1tf2p0"]
+[gd_scene load_steps=8 format=3 uid="uid://nxk83y1tf2p0"]
 
 [ext_resource type="PackedScene" uid="uid://dglpm6076ihe5" path="res://Windows/Menu.tscn" id="1_48ubg"]
 [ext_resource type="Script" path="res://Scripts/Console.gd" id="1_v8oq3"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://pjvbw5cd3lss" path="res://Windows/Load.tscn" id="4_7js2h"]
 [ext_resource type="PackedScene" uid="uid://d3l5vusr3xgiu" path="res://Windows/Texture.tscn" id="4_b3gju"]
 [ext_resource type="PackedScene" uid="uid://u88w0630hx00" path="res://Windows/Model.tscn" id="6_vbbcp"]
+[ext_resource type="Script" path="res://Scripts/Run.gd" id="7_vhup0"]
 
 [node name="Console" type="Control"]
 layout_mode = 3
@@ -24,3 +25,6 @@ visible = false
 visible = false
 
 [node name="Model" parent="." instance=ExtResource("6_vbbcp")]
+
+[node name="Run" type="Node3D" parent="."]
+script = ExtResource("7_vhup0")

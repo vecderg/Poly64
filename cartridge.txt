@@ -1,10 +1,14 @@
 ==POLY64 CARTRIDGE==
 =CODE=
-AAAAAAAAAAAAAAAAAAA
+func _ready():
+	print(what)
+	print(test)
+	print(hoogh)
 =CODE=
 =MODEL=
 =MODEL=
 =TEXTURE=
+[]
 =TEXTURE=
 =AUDIO=
 =AUDIO=

@@ -31,7 +31,14 @@ func intro():
 		timer.start(startTime)
 
 func _process(_delta):
+	#if Input.is_key_pressed(KEY_R):
+	#	get_tree().reload_current_scene()
+	
 	canvas.visible = self.visible
+	
+	if P64.justPressed("Escape"):
+		C.activateBootMenu()
+	
 	if self.visible:
 		self.visible = true
 		if P64.justPressed("2"):
@@ -52,6 +59,9 @@ func _process(_delta):
 				soundTick.play()
 			elif P64.justPressed("1") || P64.justPressed("3"):
 				match scrollAnimations[scrollIndex]:
+					"Run":
+						C.activate("Menu","Run")
+						C.get_node("Run").runGame()
 					"Load":
 						#$"../" highlight options?
 						C.activate("Menu","Load")

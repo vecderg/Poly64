@@ -38,6 +38,7 @@ func _process(_delta):
 	
 	if P64.justPressed("Escape"):
 		C.activateBootMenu()
+		C.runWindow.endGame()
 	
 	if self.visible:
 		self.visible = true

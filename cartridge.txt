@@ -2,8 +2,8 @@
 =CODE=
 func _ready():
 	print(what)
-	print(test)
-	print(hoogh)
+	boogie()
+	sprite(0)
 =CODE=
 =MODEL=
 =MODEL=

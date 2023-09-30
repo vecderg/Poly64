@@ -177,6 +177,8 @@ func loadCartridge(): ## Turns text data to textures
 		newThumbnailButton.position += Vector2(-40,-10)
 		thumbnailLabel.add_child(newThumbnailButton)
 		tnIndex += 1 ## Add index for thumbnail label count
+		
+	formatData() ## Make sure that texture data is recorded
 	pass
 
 

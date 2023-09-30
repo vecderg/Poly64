@@ -7,6 +7,7 @@ var workCode := ""
 @onready var codeWindow = $"Code"
 @onready var textureWindow = $"Texture"
 @onready var modelWindow = $"Model"
+@onready var runWindow = $"Run"
 
 func _ready():
 	#cartridgeDir = OS.get_executable_path().get_base_dir().path_join("cartridge.txt")
@@ -69,7 +70,11 @@ func activateBootMenu():
 
 ## Switching between menus
 func activate(oldMenu, newMenu):
-	if get_node(newMenu) != null:
+	if oldMenu == "Any":
+		activateBootMenu()
+		get_node("Menu").visible = false
+		get_node(newMenu).visible = true
+	elif get_node(newMenu) != null:
 		get_node(oldMenu).visible = false
 		get_node(newMenu).visible = true
 
@@ -97,6 +102,7 @@ static func justPressed(button:String):
 	
 func setWorkCode():
 	workCode = workCart.split("=CODE=")[1].strip_edges()
+	#print(workCart)
 	print(workCart.split("==POLY64 CARTRIDGE=="))
 
 
